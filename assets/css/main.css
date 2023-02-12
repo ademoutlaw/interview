@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.hero {
+		@apply relative h-96 my-2;
+		background-image: url(https://loremflickr.com/640/360);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.hero div {
+		@apply absolute top-1/4 w-full text-center text-white text-4xl md:top-2/4;
+	}
+	.card {
+		@apply flex flex-col mt-2 md:flex-row;
+	}
+}
